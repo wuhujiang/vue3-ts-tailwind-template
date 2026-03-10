@@ -1,14 +1,16 @@
 <template>
   <div class="home">
     <h1>Home Page</h1>
-    <p>Welcome to the home page!</p>
+    <p class="text-4xl">
+      Welcome to the home page!
+    </p>
     <div class="counter">
       <h2>Counter: {{ counter.count }}</h2>
       <h3>Double Count: {{ counter.doubleCount }}</h3>
-      <button @click="counter.increment">
+      <button class="bg-primary text-white" @click="counter.increment">
         Increment
       </button>
-      <button @click="counter.decrement">
+      <button class="bg-primary text-white" @click="counter.decrement">
         Decrement
       </button>
     </div>
@@ -45,5 +47,8 @@ button {
   margin: 0 10px;
   padding: 5px 10px;
   cursor: pointer;
+  // 不要这种使用方式，使用class="bg-primary text-white" 这种
+  // 可能会导致重复，但是重复就重复，清晰,也是作者说过的
+  // @apply bg-primary text-white;
 }
 </style>

@@ -2,6 +2,8 @@
   "editor.formatOnSave": true,
   "editor.defaultFormatter": null, // 或直接不设置
   "prettier.enable": false, // 重要！防止 Prettier 和 ESLint 冲突
+  "css.lint.unknownAtRules": "ignore",
+  "scss.lint.unknownAtRules": "ignore",
   "[vue]": {
     "editor.defaultFormatter": "dbaeumer.vscode-eslint"
   },

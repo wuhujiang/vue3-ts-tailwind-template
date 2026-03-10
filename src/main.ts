@@ -3,7 +3,7 @@ import { createApp } from 'vue';
 import App from './App.vue';
 import autoRegisterComponents from './plugins/autoImportComponents';
 import router from './router';
-import './styles/reset.scss';
+import './styles/main.css';
 
 const app = createApp(App);
 

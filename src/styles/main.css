@@ -1,0 +1,16 @@
+@import 'tailwindcss';
+
+@import './reset.scss';
+
+/* 你的自定义主题等 */
+@theme {
+  --color-primary: #10b981;
+  /* 会生成 .bg-primary { background-color: var(--color-primary); } */
+}
+
+/* 自定义工具类 card  */
+/* 在页面中使用class="card" 就相当于添加了 bg-white dark:bg-gray-800 rounded-xl shadow p-6 这几个类 */
+@utility card {
+  /* @apply 会把后面的类名添加到当前类中 */
+  @apply bg-white dark:bg-gray-800 rounded-xl shadow p-6;
+}
