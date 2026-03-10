@@ -29,6 +29,8 @@ export default antfu({
     '**/*.md', // 忽略所有 .md 文件
     '**/*.{png,jpg,jpeg,gif,svg,webp}', // 忽略图片文件
     '**/*.json', // 忽略 JSON 文件
+    // 忽略ofetch文件夹下所有
+    '**/ofetch/**/*.ts',
   ],
   overrides: {
     jsonc: true,
