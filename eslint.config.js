@@ -20,6 +20,7 @@ export default antfu({
     scss: true,
   },
   ignores: [
+    'public/mockServiceWorker.js',
     '**/fixtures',
     '**/assets/images',
     '**/node_modules',
@@ -31,6 +32,8 @@ export default antfu({
     '**/*.json', // 忽略 JSON 文件
     // 忽略ofetch文件夹下所有
     '**/ofetch/**/*.ts',
+    // 忽略mocks文件夹下所有
+    '**/mocks/**/*.ts',
   ],
   overrides: {
     jsonc: true,
