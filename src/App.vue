@@ -1,7 +1,7 @@
 <template>
   <div class="app">
     <header>
-      <h1>My App</h1>
+      <h1> 欢迎来到超马的世界 </h1>
     </header>
     <main>
       <router-view />
@@ -24,6 +24,8 @@ header {
   margin-bottom: 20px;
   padding-bottom: 10px;
   border-bottom: 1px solid #ccc;
+  text-align: center;
+  font-size: 36px;
 }
 
 main {
