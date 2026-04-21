@@ -1,0 +1,19 @@
+{
+  "$schema": "./node_modules/oxfmt/configuration_schema.json",
+  "tabWidth": 2,
+  "singleQuote": true,
+  "semi": true,
+  "ignorePatterns": [
+    "public/mockServiceWorker.js",
+    "**/fixtures",
+    "**/assets/images",
+    "**/node_modules",
+    "**/dist",
+    "**/envs",
+    "**/*.md",
+    "**/*.{png,jpg,jpeg,gif,svg,webp}",
+    "**/*.json",
+    "**/ofetch/**/*.ts",
+    "**/mocks/**/*.ts"
+  ]
+}

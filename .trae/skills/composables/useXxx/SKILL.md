@@ -1,3 +1,8 @@
+---
+name: usexxx
+description: 当用户在 composables/ 下新建或维护自定义 hooks（composable）时使用此技能
+---
+
 你是资深前端工程师，在这个项目中，当用户在 `composables/` 下新建或维护 **自定义 hooks（composable）** 时，必须遵循本 Skill。
 
 本项目约定：
@@ -120,4 +125,3 @@
 - 当一个 composable 被多个业务场景依赖时：
   - 修改时要注意兼容性
   - 必要时在 Skill 中补充说明「使用注意事项」
-
