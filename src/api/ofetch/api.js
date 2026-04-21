@@ -17,7 +17,7 @@ export const api = ofetch.create({
   // 默认 headers（ofetch 会自动加 Content-Type: application/json 当 body 是对象时）
   headers: {
     'Content-Type': 'application/json',
-    'Accept': 'application/json',
+    Accept: 'application/json',
   },
 
   // 请求拦截器：加 token / 日志 等（类似 axios request interceptor）

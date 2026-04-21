@@ -1,5 +1,3 @@
-import { report } from './modules/report';
+import { report } from "./modules/report";
 
-export const handlers = [
-  ...report,
-];
+export const handlers = [...report];

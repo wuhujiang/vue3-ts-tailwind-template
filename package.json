@@ -1,20 +1,17 @@
 {
   "name": "vue3-ts-tailwind-template",
-  "type": "module",
   "version": "0.0.0",
   "private": true,
+  "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "lint": "eslint .",
-    "lint:fix": "eslint . --fix",
+    "lint": "oxlint .",
+    "lint:fix": "oxlint . --fix",
+    "fmt": "oxfmt .",
+    "fmt:check": "oxfmt --check .",
     "prepare": "husky"
-  },
-  "commitlint": {
-    "extends": [
-      "@commitlint/config-conventional"
-    ]
   },
   "dependencies": {
     "axios": "^1.13.6",
@@ -23,18 +20,17 @@
     "vue-router": "^5.0.3"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^7.6.1",
     "@commitlint/cli": "^20.4.2",
     "@commitlint/config-conventional": "^20.4.2",
     "@tailwindcss/vite": "^4.2.1",
     "@types/node": "^25.3.3",
     "@vitejs/plugin-vue": "^6.0.2",
     "@vue/tsconfig": "^0.9.0",
-    "eslint": "^10.0.2",
-    "eslint-plugin-format": "^2.0.1",
     "husky": "^9.1.7",
     "lint-staged": "^16.3.1",
     "msw": "^2.12.10",
+    "oxfmt": "^0.45.0",
+    "oxlint": "^1.60.0",
     "sass": "^1.97.3",
     "tailwindcss": "^4.2.1",
     "terser": "^5.46.0",
@@ -42,8 +38,13 @@
     "vite": "^7.3.1"
   },
   "lint-staged": {
-    "*": [
-      "eslint --fix"
+    "*.{js,mjs,cjs,jsx,ts,mts,cts,tsx,vue}": [
+      "oxlint --fix"
+    ]
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
     ]
   },
   "msw": {

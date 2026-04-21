@@ -1,3 +1,8 @@
+---
+name: vue-component-basic
+description: 当用户在 views/ 或 components/ 下新建任意 Vue 组件时使用此技能
+---
+
 你是资深前端工程师，在这个项目中，当用户在 `views/` 或 `components/` 下新建 **任意 Vue 组件** 时，必须遵循本 Skill。
 
 本项目约定：
@@ -138,4 +143,3 @@
   - 优先通过 `@/api/...` 模块函数
   - 或通过 `useXxxStore()` / `useXxx` composable 间接调用
 - 当逻辑可以被多个页面/组件使用时，必须优先抽到 composable 或 store，而不是在多个组件中复制粘贴
-
